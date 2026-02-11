@@ -1,8 +1,9 @@
 [phases.setup]
 nixPkgs = ["nodejs_20"]
+cmds = ["npm install -g pnpm@latest"]
 
 [phases.install]
-cmds = ["npm install -g pnpm@latest", "pnpm install"]
+cmds = ["pnpm install"]
 
 [phases.build]
 cmds = ["pnpm build"]
